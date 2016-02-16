@@ -1,18 +1,18 @@
 * Assuming that all the required dependencies are already installed.
 
-Python Web app using Flask and Sqlite3 as Database.
+Python Web app using Flask framework and Sqlite3 (database).
 
-Application folder structure:
-Python-Web-App
--->app/
--->__init__.py, models.py, views.py, /templates
---> run.py 
---> database.db(sqlite database file)
---> schema.sql (database commands)
+Python-Web-App/
+app/
+   __init__.py, models.py, views.py, /templates/
+run.py
+database.db
+schema.sql
 
-virtualenv env (activate virtualenv)
-source env/bin/activate
-python run.py
+# virtualenv env
+# source env/bin/activate
+# python run.py
 
 Open the below link in your browser:
 http://localhost:5000/
+
