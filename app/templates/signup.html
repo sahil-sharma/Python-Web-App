@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+{% block content %}
+    <h1>Sign up for User Information</h1>
+
+    {% if error %}
+    <p class=error><strong>Error:</strong> {{ error }}
+    {% endif %}
+
+<form method="post" action="{{ url_for('signedup') }}">
+<fieldset>
+    <legend>User Information:</legend>
+    Username *:<br>
+    <input type="text" name="username" value=""><br><br>
+    Password *:<br>
+    <input type="password" name="password" value=""><br><br>
+    Home Folder *:<br>
+    <input type="text" name="homefolder" value=""><br><br>
+    Grant Sudo:<br>
+    <input type="radio" name="grantsudo" value="No" checked> No<br>
+    <input type="radio" name="grantsudo" value="Yes"> Yes<br><br>
+    Shell Type:<br>
+    <input type="radio" name="shelltype" value="sh" checked> sh (/bin/sh)<br>
+    <input type="radio" name="shelltype" value="ksh"> K shell (/bin/ksh)<br><br>
+
+    <input type="submit" value="Submit">
+  </fieldset>
+
+</form>
+{% endblock %}
